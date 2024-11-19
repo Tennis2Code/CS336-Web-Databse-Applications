@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Name: Selinde Tatum
+     Assignment: CS336 Assignment #4
+     Created 7/13/2024
+     Description: Base Page for the conference registration-->
+
+<html lang="en">
+<head>
+    <meta name="keywords" content="example, html, Regis">
+    <meta name=" description" content = "example of description">
+    <meta name="author" content = "[Author Name}">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+
+
+
+    <title>Registration</title>
+  <link rel="stylesheet" href="css/webdefault.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="meals.html">Meals</a>
+        <a href="awards.html">Awards</a>
+        <a href="keynote.html">Keynote</a>
+        <a href="workshopschedule.html">Workshop Schedule</a>
+        <a href="registration.html">Registration</a>
+        <a href="thankyou.html">Thank You</a>
+        <a href="poll.html">Poll</a>
+    </nav>
+</header>
+<main>
+    <h1> Conference Registration</h1>
+    <form action="thankyou.html" method="GET">
+    <fieldset>
+      <label for="idNum"> Conference ID:</label>
+      <input type="text" id="idNum" name ="idNum" value ="123456"
+             pattern="\d{6}" required placeholder="Enter your conference ID"
+              title ="Only Numbers"><br><br>
+      <legend>Basic Registration Information</legend>
+      <label for="title"> Title:</label>
+      <select id="title" name="title" required>
+        <option value="Mr. ">Mr.</option>
+        <option value="Ms. ">Ms.</option>
+        <option value="Mrs. ">Mrs.</option>
+      </select><br><br>
+      <label for="firstName"> First Name:</label>
+      <input type="text" id="firstName" name="firstName" value="Emily"
+             pattern="[a-zA-Z]+" required placeholder="Enter your first name"
+             title="Only letters"><br><br>
+
+      <label for="lastName"> Last Name:</label>
+      <input type="text" id="lastName" name="LastName" value="Fanta"
+             pattern="[a-zA-Z\-]+" required placeholder="Enter your last name"
+             title="Only letters and hyphens"><br><br>
+
+      <label for="address1"> Address Line 1:</label>
+      <input type="text" id="address1" name="address1" value="123 North Belly"
+             pattern="[a-zA-Z0-9\s#]+" required placeholder="Enter your first address"
+             title="Only letters, spaces and numbers, no other symbols other than #"><br><br>
+
+      <label for="address2"> Address Line 2:</label>
+      <input type="text" id="address2" name="address2" value="123 SouthBelly"
+             pattern="[a-zA-Z0-9\s#]+" required placeholder="Enter your second address"
+             title="Only letters, spaces and numbers, no other symbols other than #"><br><br>
+
+      <label for="city"> City:</label>
+      <input type="text" id="city" name="city" value="Charleston"
+             pattern="[a-zA-Z\ ]+" required placeholder="Enter your city"
+             title="Only letters and spaces allowed"><br><br>
+
+      <label for="state"> State:</label>
+      <select id="state" name="state" required>
+      <option value="TN">Tennessee</option>
+      </select><br><br>
+
+    <label for="zip"> Zip Code:</label>
+    <input type="text" id="zip" name="zip" value="12345"
+           pattern="[0-9]{5}" required placeholder="Enter your zip code"
+           title="Five Digits Required"><br><br>
+
+      <label for="phone"> Phone:</label>
+      <input type="tel" id="phone" name="phone" value="123-456-7890"
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter your phone number"
+             title="Format: 123-456-7890"><br><br>
+
+      <label for="email"> Email Address:</label>
+      <input type="email" id="email" name="email" value="email@gmail.com"
+              required placeholder="Enter your email"
+             title="Enter a valid email address"><br><br>
+
+    </fieldset>
+      <fieldset>
+        <legend> Company Information </legend>
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" value=TechCorp
+               pattern="[a-zA-Z0-9\s]+" required placeholder="Enter your company name"
+               title="Only letters, numbers and spaces allowed"><br><br>
+
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" value=Coach
+               pattern="[a-zA-Z0-9\s]+" required placeholder="Enter your position"
+               title="Only letters, numbers and spaces allowed"><br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Workshop Selection</legend>
+        <p> Session 1:</p>
+        <input type="radio" id=" session1a" name="session1" value="Workshop A" required>
+        <label for= " session1a">Workshop A</label><br>
+
+        <input type= "radio" id= "session1b" name="session1" value="Workshop B" required>
+        <label for="session1b"> Workshop B</label><br>
+
+        <input type= "radio" id= "session1c" name="session1" value="Workshop C" required>
+        <label for="session1c"> Workshop C</label><br>
+
+        <p> Session 2:</p>
+        <input type= "radio" id= "session2a" name="session2" value="Workshop D" required>
+        <label for="session2a"> Workshop D</label><br>
+
+        <input type= "radio" id= "session2b" name="session2" value="Workshop E" required>
+        <label for="session2b"> Workshop E</label><br>
+
+        <input type= "radio" id= "session2c" name="session2" value="Workshop F" required>
+        <label for="session2c"> Workshop F</label><br>
+
+        <p> Session 3:</p>
+        <input type= "radio" id= "session3a" name="session3" value="Workshop G" required>
+        <label for="session3a"> Workshop G</label><br>
+
+        <input type= "radio" id= "session3b" name="session3" value="Workshop H" required>
+        <label for="session3b"> Workshop H</label><br>
+
+        <input type= "radio" id= "session3c" name="session3" value="Workshop I" required>
+        <label for="session3c"> Workshop I</label><br>
+      </fieldset>
+    <fieldset>
+      <legend> Billing Information</legend>
+    </fieldset>
+      <button type="submit"> Submit </button>
+
+  </form>
+  <script src="registration.html"></script>
+</main>
+<footer>
+    <address>
+      <small>
+            407 South Avenue,small,TN<br>
+            Telephone: [731-567-0899]<br>
+            Email: <a href="mailto:lindytater@gmail.com">lindytater@gmail.com</a>
+      </small>
+    </address>
+    <small>
+        While this website was created to satisfy the requirement of
+        building a website for an academic course at Regis University, the
+        views and opinions expressed on this website are solely those of
+        the original author and do not necessarily represent the views and
+        opinions of Regis University.
+
+    </small>
+</footer>
+
+</body>
+</html>

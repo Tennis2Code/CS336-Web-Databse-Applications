@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Name: Selinde Tatum
+     Assignment: CS336 Assignment #4
+     Created 7/13/2024
+     Description: Base Page for the conference poll-->
+
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="example, html, Regis">
+    <meta name=" description" content = "example of description">
+    <meta name="author" content = "[Author Name}">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+  <title>Conference Poll</title>
+    <link rel="stylesheet" href="css/webdefault.css">
+  <script src = "js/poll.js" defer></script>
+
+</head>
+
+<body onload= "loadVotes()">
+ <nav>
+      <a href="index.html">Home</a> |
+      <a href="meals.html">Meals</a> |
+      <a href="awards.html">Awards</a> |
+      <a href="keynote.html">Keynote</a> |
+      <a href="workshopschedule.html">Workshop Schedule</a> |
+      <a href="registration.html">Registration</a> |
+      <a href="thankyou.html">Thank You</a> |
+      <a href="poll.html">Poll</a> |
+    </nav>
+ <header>
+    <h1> Poll</h1>
+</header>
+<main>
+    <form id="pollForm">
+          <fieldset>
+            <legend> Vote for your favorite Tennis Club </legend>
+            <label>
+              <input type="radio" name="nominee" value="The Langerfields Club">The Langerfields Club
+              <span id ="TheLangerfieldsClubVotes">0</span>
+              </label><br>
+            <label>
+              <input type="radio" name="nominee" value="The Richland Club">The Richland Club
+              <span id ="TheRichlandClubVotes">0</span>
+            </label><br>
+            <label>
+              <input type="radio" name="nominee" value="The Belmont">The Belmont
+              <span id ="TheBelmontVotes">0</span>
+              </label><br>
+            <button type="submit">Submit Vote</button>
+          </fieldset>
+ </form>
+</main>
+    <address>
+      <small>
+            407 South Avenue,small,TN<br>
+            Telephone: [731-567-0899]<br>
+            Email: <a href="mailto:lindytater@gmail.com">lindytater@gmail.com</a>
+      </small>
+    </address>
+    <small>
+        While this website was created to satisfy the requirement of
+        building a website for an academic course at Regis University, the
+        views and opinions expressed on this website are solely those of
+        the original author and do not necessarily represent the views and
+        opinions of Regis University.
+
+    </small>
+
+</body>
+
+</html>
