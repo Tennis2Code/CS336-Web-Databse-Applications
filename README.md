@@ -15,16 +15,9 @@ This project is a fully functional conference website designed for a fictional t
 
 ### 1. **Registration with Cookies**
 - Users can register for the conference, and their information is stored in a cookie.
-- When users revisit the registration page and provide their conference ID, the system:
-  - Pre-fills the registration form with stored information if available.
-  - Displays an appropriate message if no information is found.
 
 ### 2. **Polling with Local Storage**
 - A voting poll allows users to vote for specific options.
-- Votes are:
-  - Stored in the browser's local storage.
-  - Retrieved, updated, displayed, and saved after every vote.
-  - The system maintains a running tally of votes, persisting across sessions.
 
 ### 3. **Nametag Generation**
 - Every conference attendee must have a personalized nametag.
@@ -39,9 +32,9 @@ This project is a fully functional conference website designed for a fictional t
 
 ## Technologies Used
 1. **HTML5**: For structuring the site and pages.
-2. **CSS3**: For styling, including responsive layouts.
-3. **JavaScript**: For interactive features like cookies and local storage.
-4. **Python**: For backend tasks like nametag generation.
+2. **CSS3**: For styling.
+3. **JavaScript**: For cookies and local storage.
+4. **Python**: For backend tasks ex) nametags.
 5. **CSV**: To store and process registrant data.
 
 ## Author:
